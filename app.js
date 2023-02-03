@@ -4,13 +4,13 @@
 // 1.2. Within a function, what is the difference between return and console.log?
 // Console.log will display the parameter in the console. Return statement will stop executing of the function and return the specified value (not into the console).
 // 1. 3. What are the implications of the ability of a function to return a value?
-// It implies we can create a reusable tool that helps developers break larger problems in to smaller steps
+// It implies we can create a reusable tool that helps developers break larger problems in to smaller steps. Without a return the function we will always have a value of undefined. And when we add function to a variable, that becomes really important to assign values to the return of the function
 // 2. calculateCube
 function calculateCube(num) {
     // YOUR CODE HERE
     return num * num * num;
 }
-console.log(calculateCube(2));
+// console.log(calculateCube(2));
 
 // 3. isAVowel
 function isAVowel(letter) {
@@ -25,12 +25,15 @@ function isAVowel(letter) {
     return false;
 }
 
-console.log(isAVowel("b"));
+// console.log(isAVowel("b"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
+    return [word1.length, word2.length];
+
 }
+console.log(getTwoLengths("fun", "Beer"));
 
 // 5. sumArray
 function sumArray(arr) {
