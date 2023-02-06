@@ -65,19 +65,26 @@ console.log(checkPrime(139));
 // 6.2 printPrimes
 function printPrimes(num) {
     // YOUR CODE HERE
-    
     for(let i = 2; i <= num; i++) {
         if(checkPrime(i) === true) {
             console.log(i);
         }
     }
 }
-console.log(printPrimes(100));
+// console.log(printPrimes(100));
+
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
+    let word = "";
+    for (let i = 0; i < arr.length; i++) {
+        if (word.length < arr[i].length) {
+            word = arr[i];
+        }
+    }
+    return word;
 }
-
+console.log(printLongestWord(["hello", "hi", "greetings"]));
 // BONUS!
 
 // 8. eulerFibo
